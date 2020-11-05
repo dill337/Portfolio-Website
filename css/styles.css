@@ -11,6 +11,7 @@
 body {
   font-family: 'Chelsea Market', cursive;
   font-weight: 400;
+  background-color: turquoise;
 }
 
 
@@ -100,6 +101,9 @@ a:active {
   padding:20px;
 }
 
+.h1 {
+  text-align: center;
+}
 .page-header__item {
   flex: 0 1 200px
 }
@@ -146,7 +150,7 @@ a:active {
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: orange;
   padding: 10px;
   /* Set width to auto*/
   width: auto;
