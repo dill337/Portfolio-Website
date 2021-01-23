@@ -2,83 +2,107 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-   <meta charset="utf-8">
-    <title>Patrick's Portfolio</title>
-      <link rel="Wiki-icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
-      <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Patrick's Portfolio</title>
+  <link rel="Wiki-icon" href="http://wikipedia.com/static/favicon/wikipedia.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link id="theme-style" rel="stylesheet" type="text/css" href="">
+</head>
 
-  <body>
-    <header class="page-header">
-      <!-- <img src="http://via.placeholder.com/200x70" alt="logo" class="page-header__item"> -->
-        <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-              <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-            </li>
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-            </li>
-            <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-            </li>
-            <li role="presentation">
-              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-            </li>
-          </ul>
-        </nav>
-    </header>
+<body>
+  <header class="page-header">
+    <!-- <img src="http://via.placeholder.com/200x70" alt="logo" class="page-header__item"> -->
+    <nav class="main-navigation page-header__item">
+      <div class="hamburger" id="hamburger">
+        <div></div>
+      </div>
+      <ul role="menubar" class="navigation-list" id="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Main content -->
-<section>
-  <h1 class="h1">Work</h1>
-  <div class="grid">
-
-    <div class="grid__item">
-      <h2>Some Movies I like</h2>
-      <p>
-        This is a React Site that shows a few movies that I like.
-      </p>
-        <a href="https://mymoviepull.herokuapp.com/client/">Check out some movies</a>
+  <section>
+    <div class="h1_box">
+      <h1 class="h1">My Projects</h1>
     </div>
+    <div class="grid">
+      <div class="grid__item">
+        <h2>My Movie Pull</h2>
+        <p>
+          This is a React Site with a REST API of movie recommendations.
+        </p>
 
-    <div class="grid__item">
-      <h2>Quizzes</h2>
-      <p>
-        Test your French or Math skills with these quizzes
-      </p>
-        <a href="https://dill337.github.io/my-awesome-quiz-app/welcome">See my Angular Project</a>
+        <a href="https://mymoviepull.herokuapp.com/client/" target="_blank">
+          <img class="project_pic" width="370" height="250" src="img/myflix.jpeg" alt="movieapp"></a>
+        <br>
+        <a class="case_study" href="/Movie_app_case_study.pdf" target="_blank">Here is the Case Study</a>
+      </div>
+      <div class="grid__item">
+        <h2>Quizzes</h2>
+        <p>
+          Test your French or Math skills with these quizzes made with Angular
+        </p>
+        <a href="https://dill337.github.io/my-awesome-quiz-app/welcome" target="_blank">
+          <img class="project_pic" width="370" height="250" src="img/quiz.png" alt="quizapp">
+        </a>
+      </div>
+      <div class="grid__item">
+        <h2>To do List</h2>
+        <p>
+          Make a To Do list with my Vue app
+        </p>
+        <a href="https://dill337.github.io/todo-app/" target="_blank">
+          <img class="project_pic" width="370" height="250" src="img/vue.png" alt="todoapp"></a>
+      </div>
+      <div class="grid__item">
+        <h2>My React Meet App</h2>
+        <p>
+          Discover Coding Events throughout the World with my React App
+        </p>
+        <a href="https://dill337.github.io/meet/" target="_blank">
+          <img class="project_pic" width="370" height="250" src="img/react.png" alt="meetapp"></a>
+      </div>
     </div>
-
-    <div class="grid__item">
-      <h2>To do List</h2>
-      <p>
-        Want to make a list of things to do?
-      </p>
-        <a href="https://dill337.github.io/todo-app/">Check out my Vue app</a>
     </div>
+  </section>
 
-    <div class="grid__item">
-      <h2>My React Meet App</h2>
-      <p>
-        Check out some Coding events throughout the world
-      </p>
-        <a href="https://dill337.github.io/meet/">See my Meetup App</a>
+  <!-- Footer with links to social media profiles -->
+  <footer class="page-footer">
+    <div class="color-theme-section">
+      <div id="theme-options-wrapper">
+        <div data-mode="dark" id="dark-mode" class="theme-selector"></div>
+        <div data-mode="white" id="white-mode" class="theme-selector"></div>
+        <div data-mode="purple" id="purple-mode" class="theme-selector"></div>
+        <div data-mode="green" id="green-mode" class="theme-selector"></div>
+      </div>
+      <p class="settings-note">Choose Your Theme</p>
     </div>
+    <h3 class="text">Find me on</h3>
+    <div class="social-media">
+      <a class="social-media_item linkedin" href="https://www.linkedin.com/in/patrickdburke1/" target="_blank"><img
+          width="65" height="65" src="img/linkedin_icon1.png" alt="Linked-in"></a>
+      <a class="social-media_item github" href="https://github.com/dill337" class="social_media" target="_blank"><img
+          width="70" height="70" src="img/github_whitenow.png" alt="Github"></a>
+      <a class="social-media_item" href="https://twitter.com/Patrick61474079" class="social_media" target="_blank"><img
+          width="70" height="70" src="img/twitter_icon.svg" alt="Twitter"></a>
+    </div>
+  </footer>
 
-  </div>
-</section>
-<!-- Footer with links to social media profiles -->
-<footer class="page-footer">
-  <p>Find me on</p>
-  <div class="social-media">
-      <img src="img/twitter_icon.svg" alt="Twitter">
-      <img src="img/linkedin_icon.svg" alt="Linked-in">
-      <img src="img/github_icon.svg" alt="Github">
- </div>
-</footer>
-
-
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>

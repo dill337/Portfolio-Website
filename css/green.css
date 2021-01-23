@@ -1,0 +1,16 @@
+:root {
+  --color-active: #489c79;
+  --grid-color: silver;
+  --font-color: black;
+  --heading-font-weight: 700;
+  --theme-dot-border: gray;
+  --background-color: #606B56;
+  --header-color: black;
+  --unvisited-color: yellow;
+  --case-study-color: blue;
+  --settings-font-color: purple;
+}
+
+.linkedin {
+  filter: brightness(60%)
+}

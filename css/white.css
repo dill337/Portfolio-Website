@@ -1,0 +1,15 @@
+:root {
+  --color-active: #489c79;
+  --grid-color: silver;
+  --font-color: black;
+  --heading-font-weight: 700;
+  --theme-dot-border: gray;
+  --background-color: #eee;
+  --header-color: black;
+  --unvisited-color: blue;
+  --case-study-color: blue;
+}
+
+.github {
+  filter: brightness(0%)
+}
